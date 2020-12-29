@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   /* background-color: grey; */
+   color: white;
+   margin: 0;
+   text-align: center;
+   border-left: 5px solid white;
+   border-right: 5px solid white;
+   /* animation: 2s slide-text; */
+}
+
+@keyframes slide-text {
+    from {
+        margin-left: -500px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+nav {
+    height: 10vh;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0vh;
+    background-color: #c9d8f0;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+#header-content, #about-inner, #skills-inner, #contact-inner {
+    animation: slide-text 1s ease-in-out;
+}
+
+header, footer, section {
+    padding-top: 10vh;
+    /* border-radius: 10px; */
+}
+
+header, section {
+    height: 100vh;
+    margin-bottom: 10px;
+    background-color: #c9d8f0;
+}
+
+header {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer {
+    height: 50vh;
+    background-color: grey;
+    padding-top: 10vh;
+}
+
+#header-content {
+    height: 30%;
+    width: 100%;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-top {
+    font-size: 20px;
+    color: #3972cc;
+    font-weight: bold;
+}
+
+.header-name {
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+}
+
+.header-role {
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+}
+
+.header-role span {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.header-role:first-child {
+    width: 24%;
+} 
+
+.role-Write {
+    border-right: 3px solid black;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    /* animation: typing 2s ease-in-out .75s infinite alternate; */
+    /* overflow: hidden; */
+}
+
+/* @keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+@keyframes blink-effect {
+    from {border-color: transparent;}
+    to {border-color: black;}
+} */
+
+#header-image {
+    width: 80%;
+    height: 40%;
+}
+
+.is-hidden {
+    display: none;
+}
+.is-visible {
+    /* display: inline; */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
