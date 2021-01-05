@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #141c3a;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -33,7 +42,7 @@ nav {
     width: 100%;
     position: fixed;
     top: 0vh;
-    background-color: #c9d8f0;
+    background-color: white;
     border-left: 5px solid white;
     border-right: 5px solid white;
 }
@@ -42,11 +51,11 @@ nav {
 }
 
 header, footer, section {
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
     /* border-radius: 10px; */
 }
 
-header, section {
+section {
     height: 100vh;
     margin-bottom: 10px;
     background-color: #c9d8f0;
@@ -54,10 +63,15 @@ header, section {
 
 header {
     height: 150vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    background: url('./assets/download.png');
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat center center fixed;
+    background-size: cover;
 }
 
 footer {
@@ -77,19 +91,21 @@ footer {
 }
 
 .header-top {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #3972cc;
     font-weight: bold;
 }
 
 .header-name {
-    font-size: 35px;
+    font-size: 3rem;
     color: black;
     font-weight: bolder;
+    font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
 }
 
 .header-role {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: black;
     font-weight: bolder;
 }
@@ -123,8 +139,8 @@ footer {
 } */
 
 #header-image {
-    width: 80%;
-    height: 40%;
+    width: 100%;
+    /* height: 40%; */
 }
 
 .is-hidden {
@@ -135,6 +151,49 @@ footer {
     position: relative;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}
+
+#about {
+    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto; */
+    
+}
+
+#about-inner {
+    width: 490px;
+    padding: 20px;
+    flex-grow: 2;
+    font-size: 20px;
+    text-align: left;
+    background-color: #7510F7;
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+
+#about-inner p {
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+
+#about-ext {
+    width: 210px;
+    flex-grow: 1;
+    background-color: white;
+}
+
+
 
 
 

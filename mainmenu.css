@@ -1,10 +1,10 @@
 
 #main-menu {
     list-style: none;
-    font-size: 15px;
+    font-size: 1rem;
     /* box-sizing: border-box; */
     height: 100%;
-    width: 40%;
+    width: 60%;
     margin: auto;
     padding: 0;
     --activeBack: gray;
@@ -12,7 +12,7 @@
 
 #main-menu li {
     float: right;
-    width: 25%;
+    width: 20%;
     height: 100%;
 }
 
@@ -38,9 +38,9 @@
 
 #main-menu a:hover {
     /* background-color: var(--activeBack); */
-    border-bottom: 1px solid white;
-    color: white;
-    transform: matrix(1.1, 0, 0, 1.1, 0, 5);
+    border-bottom: 1px solid black;
+    color: black;
+    transform: matrix(1.1, 0, 0, 1.1, 0, 1);
 }
 
 /* .activeNavElement { */
@@ -48,3 +48,5 @@
     /* transition: none !important; */
     /* transform: none !important; */
 /* } */
+
+

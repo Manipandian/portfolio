@@ -12,6 +12,7 @@
       content="Manipandi, manikandan thangapandian, portfolio of manipandi, portfolio of manikandan thangapandian, manipandi profile, web developer profile"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./mainmenu.css" />
   </head>
@@ -19,14 +20,16 @@
     <header id="intro">
       <nav>
         <ul id="main-menu">
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>          
+          <li><a href="#project">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#intro" class="activeNavElement">Intro</a></li>
+          <li><a href="#intro">Intro</a></li>
         </ul>
       </nav>
-      <img src="./assets/header-avatar.svg" style="height: 20%; width: 50%;" alt="face" />
+      <img src="./assets/header-avatar.svg" style="height: auto;" alt="face" />
       <div id="header-content">
+        
         <div class="header-top">HEY! I AM </div>
         <div class="header-name">Manikandan Thangapandian</div>
         <hr>
@@ -36,15 +39,27 @@
           </span>
         </div>
       </div>
-      
-      <img src="./assets/head-desk.svg" id="header-image" alt="back" />
+      <div id="header-image">
+        <img src="./assets/head-desk.svg" style="max-width: 100%; height: auto;" alt="back" />
+      </div>
       
     </header>
     <section id="about">
-      <article id="about-inner"><h2>About Me</h2></article>
+      <div id="about-ext">Hurray</div>
+      <article id="about-inner">
+        <p>About Me</p>
+        <div class="about-inner">Hi I am Manikandan Thangapandian, a 23 years old web developer living in Chennai india. 
+          I am an software engineer currently working with awesome folks of Syncfusion</div>
+        <br>
+        <div class="about-inner">I am looking for an opportunity to explore new things and do some creative work. 
+          I am always interested to work with like minded peoples. Just connect with me on LinkedIn</div>
+      </article>
     </section>
     <section id="skills">
       <article id="skills-inner"><h2>Skills</h2></article>
+    </section>
+    <section id="project">
+      <article id="skills-inner"><h2>Projects</h2></article>
     </section>
     <footer id="contact">
       <div id="contact-inner">
